@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>1986 Backpropagation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:1920px;
+    height:1080px;
+    background:#021B3A;
+    overflow:hidden;
+    font-family:'Pretendard',sans-serif;
+    color:white;
+}
+
+.slide{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+/* YEAR */
+.year{
+    position:absolute;
+    left:100px;
+    top:90px;
+
+    font-size:120px;
+    font-weight:800;
+    color:rgba(255,255,255,.08);
+}
+
+/* LABEL */
+.label{
+    position:absolute;
+    left:110px;
+    top:70px;
+
+    font-size:20px;
+    letter-spacing:8px;
+    color:#19B5FF;
+}
+
+/* TITLE */
+.title{
+    position:absolute;
+    width:100%;
+    top:180px;
+    text-align:center;
+
+    font-size:88px;
+    font-weight:800;
+    line-height:1.15;
+}
+
+/* SUB */
+.subtitle{
+    position:absolute;
+    width:100%;
+    top:320px;
+    text-align:center;
+
+    font-size:34px;
+    color:#9AB0C8;
+    font-weight:300;
+}
+
+/* CENTER LINE */
+.line{
+    position:absolute;
+    left:50%;
+    top:420px;
+
+    width:2px;
+    height:180px;
+
+    background:rgba(25,181,255,.45);
+    transform:translateX(-50%);
+}
+
+/* NETWORK */
+.network{
+    position:absolute;
+    left:50%;
+    top:520px;
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:120px;
+}
+
+.layer{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.node{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+
+    border:3px solid #19B5FF;
+    background:transparent;
+
+    box-shadow:0 0 18px rgba(25,181,255,.5);
+}
+
+/* COMPARISON */
+.compare{
+    position:absolute;
+    bottom:210px;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    align-items:center;
+    gap:100px;
+
+    font-size:42px;
+    font-weight:700;
+}
+
+.bad{
+    color:#FF5B5B;
+}
+
+.good{
+    color:#31D37D;
+}
+
+/* QUOTE */
+.quote{
+    position:absolute;
+    bottom:90px;
+    width:100%;
+    text-align:center;
+
+    font-size:34px;
+    line-height:1.7;
+    color:#DDE6F0;
+}
+
+.highlight{
+    color:#19B5FF;
+    font-weight:700;
+}
+</style>
+</head>
+
+<body>
+
+<div class="slide">
+
+    <div class="label">BACKPROPAGATION</div>
+
+    <div class="year">1986</div>
+
+    <div class="title">
+        AI를 다시 깨우다
+    </div>
+
+    <div class="subtitle">
+        문제는 AI가 아니라,<br>
+        AI를 가르치는 방법이었다.
+    </div>
+
+    <div class="line"></div>
+
+    <div class="network">
+
+        <div class="layer">
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+        </div>
+
+        <div class="layer">
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+        </div>
+
+        <div class="layer">
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+        </div>
+
+    </div>
+
+    <div class="compare">
+        <div class="bad">Single Layer ✕</div>
+        <div class="good">Multi Layer ○</div>
+    </div>
+
+    <div class="quote">
+        퍼셉트론은 실패한 것이 아니었다.<br>
+        <span class="highlight">
+            문제는 AI가 아니라 AI를 가르치는 방법이었다.
+        </span>
+    </div>
+
+</div>
+
+</body>
+</html>
